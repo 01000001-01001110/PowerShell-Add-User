@@ -104,7 +104,7 @@ $az_btn.add_Click.Invoke({
     $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
     $PasswordProfile.Password="3Rv0y1q39/chsy"
     #Let us put it all together and output to the console the command you need to run. 
-    $AricG = "New-AzureADUser -DisplayName ""$dn"" -GivenName ""$fn"" -SurName ""$ln"" -UserPrincipalName ""$em"" -UsageLocation US -MailNickName ""$emailprefix"" -LicenseAssignment osaa:ENTERPRISEPACK -PasswordProfile ""$PasswordProfile"" -AccountEnabled ""$changePasswordatLogin"""
+    $AricG = "New-AzureADUser -DisplayName ""$dn"" -GivenName ""$fn"" -SurName ""$ln"" -UserPrincipalName ""$em"" -UsageLocation US -MailNickName ""$emailprefix"" -LicenseAssignment comp:ENTERPRISEPACK -PasswordProfile ""$PasswordProfile"" -AccountEnabled ""$changePasswordatLogin"""
     Write-Host  $AricG
 })
 
